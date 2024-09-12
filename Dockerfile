@@ -42,7 +42,7 @@ func main() {
 		sleepyTime()
 	}
 	// Change pi/4 to just pi by multiplying answer by 4
-	// FloatString asks for an amount of precision
+	// FloatString asks for an amount of precision.
 	fmt.Println(sum.FloatString(32))
 }
 EOF
