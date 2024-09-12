@@ -7,13 +7,7 @@ module hello
 go 1.19
 EOF
 
-COPY <<EOF main.go
-package main
-import "fmt"
-func main() {
-    fmt.Println("Hello World!")
-}
-EOF
+COPY *.go main.go
 RUN go build -o hello .
 
 FROM cgr.dev/chainguard/static:latest
